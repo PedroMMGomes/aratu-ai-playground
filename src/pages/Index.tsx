@@ -1,16 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Nav from "@/components/home/Nav";
+import Hero from "@/components/home/Hero";
+import Metrics from "@/components/home/Metrics";
+import Capabilities from "@/components/home/Capabilities";
+import Infra from "@/components/home/Infra";
+import CodeSnippet from "@/components/home/CodeSnippet";
+import About from "@/components/home/About";
+import Footer from "@/components/home/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  const personLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Pedro Murilo Maciel Gomes",
+    alternateName: "Aratutec",
+    jobTitle: "Software & AI Developer",
+    url: "https://aratutec.org",
+    sameAs: [
+      "https://github.com/PedroMMGomes",
+      "https://linkedin.com/in/pedrogomes600",
+    ],
+    email: "mailto:pedrogomes600@hotmail.com",
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
+      />
+      <Nav />
+      <main>
+        <Hero />
+        <Metrics />
+        <Capabilities />
+        <Infra />
+        <CodeSnippet />
+        <About />
+      </main>
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
