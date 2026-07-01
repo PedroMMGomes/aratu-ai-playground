@@ -1,3 +1,7 @@
+﻿<p align="center">
+  <img src="readme-hero.png" alt="hero" width="100%">
+</p>
+
 <h1 align="center">🚀 Aratutec AI Playground</h1>
 <p align="center"><strong>Site profissional + playground de IA da Aratutec (Vite · React · TypeScript · Tailwind · shadcn/ui).</strong></p>
 
