@@ -19,7 +19,7 @@ const Index = () => {
       "https://github.com/PedroMMGomes",
       "https://linkedin.com/in/pedrogomes600",
     ],
-    email: "mailto:pedrogomes600@hotmail.com",
+    email: "mailto:aratutec@gmail.com",
   };
 
   return (

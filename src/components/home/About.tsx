@@ -60,7 +60,7 @@ const About = () => {
                 GitHub <ArrowUpRight className="h-3.5 w-3.5" />
               </a>
               <a
-                href="mailto:pedrogomes600@hotmail.com"
+                href="mailto:aratutec@gmail.com"
                 className="inline-flex items-center gap-1.5 rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-90"
               >
                 <Mail className="h-3.5 w-3.5" />
